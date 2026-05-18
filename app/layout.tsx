@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
@@ -37,6 +37,12 @@ export const metadata: Metadata = {
       "Leading supplier of forged flanges and pipe fittings to ANSI, ASME, DIN, BS and JIS — Dubai-based, exporting worldwide.",
     type: "website",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#1B4E8F",
 };
 
 export default function RootLayout({
